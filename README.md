@@ -1,4 +1,5 @@
-# Yet Another Quiz App (YAQA) - Simple yet powerfull open-source JSON based quiz generator
+# Yet Another Quiz App (YAQA)
+# Simple yet powerfull open-source JSON-based quiz generator
 
 ## Introduction
 YAQA is a quiz generator written in pure HTML, CSS and jQuery.It's designed to be:
