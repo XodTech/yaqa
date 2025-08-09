@@ -1,0 +1,27 @@
+[
+    {
+        "type": "flashcard",
+        "difficulty": "easy",
+        "question": "That is a flashcard question",
+        "answer": "That is a flashcard answer"
+    },
+    {
+        "type": "one-line",
+        "difficulty": "medium",
+        "question": "What is the capital of France?",
+        "answer": "Paris"
+    },
+    {
+        "type": "true/false",
+        "difficulty": "hard",
+        "question": "Is 1 = 1?",
+        "answer": true
+    },
+    {
+        "type": "multiple-choice",
+        "difficulty": "expert",
+        "question": "The answer is A",
+        "choices": ["Answer A","Answer B","Answer C","Answer C"],
+        "answer": "A"
+    }
+]
