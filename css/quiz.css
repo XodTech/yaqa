@@ -1,0 +1,131 @@
+.next-btn {
+    float:right;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.next-btn:hover {
+    background-color: #3e8e41;
+}
+
+.tf-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tf-btn {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.true-btn {
+    background-color: #02def7;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.true-btn:hover {
+    background-color: #1a9be5;
+}
+
+.false-btn {
+    background-color: #fc2e05;
+    color: #fff;
+}
+
+.false-btn:hover {
+    background-color: #e51a1a;
+}
+
+.disabled {
+    background-color: #434342;
+    cursor: not-allowed;
+}
+
+.mch-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.mch-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:  #07dff9;
+    color: #fff;
+    cursor: pointer;
+    flex: 1;
+    min-width: 30%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.mch-container button:hover {
+  background-color: #05c7e6;
+}
+
+.difficulty-indicator {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.difficulty-indicator.easy {
+    background-color: #cff6cf;
+    color: #3e8e41;
+}
+
+.difficulty-indicator.easy:hover {
+    background-color: #a6f2a6;
+    color: #2f7f2f;
+}
+
+.difficulty-indicator.medium {
+    background-color: #ffd7b5;
+    color: #a0522d;
+}
+
+.difficulty-indicator.medium:hover {
+    background-color: #ffe6cc;
+    color: #7f4525;
+}
+
+.difficulty-indicator.hard {
+    background-color: #ffc0c0;
+    color: #8b0a1a;
+}
+
+.difficulty-indicator.hard:hover {
+    background-color: #ffcccc;
+    color: #6f0816;
+}
+
+.difficulty-indicator.expert {
+    background-color: #dc60ea;
+    color: #731296;
+}
+
+.difficulty-indicator.expert:hover {
+    background-color: #e67ae6;
+    color: #5c0a7c;
+}

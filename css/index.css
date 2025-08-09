@@ -1,0 +1,189 @@
+body {
+    background-color: #1a1a1a;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.modal {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 500px;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: pop-up 0.1s ease-in-out forwards;
+}
+
+@keyframes pop-up {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 0.9;
+        transform: scale(1);
+    }
+}
+
+.title {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    
+}
+.add-btn {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+
+.add-btn:hover {
+    background-color: #ff9900;
+    transform: scale(1.03);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    color: #ffffff;
+    resize: none;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #ffa07a;
+    transition: border 0.2s ease-in-out;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-label {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.file-label:hover {
+    background-color: #4b4b4b;
+    transform: scale(1.02);
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    color: #ffffff;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid #ffa07a;
+    transition: border 0.2s ease-in-out;
+}
+
+button[type="submit"] {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 10px;
+    
+}
+
+#quiz-list {
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+    max-width: 300px;
+}
+
+.quiz-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #454545;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    max-width: 300px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.quiz-item .name {
+    margin-right: 10px;
+}
+
+.quiz-item .delete {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #ff0000;
+    transition: color 0.2s ease-in-out;
+}
+
+.quiz-item:hover {
+    background-color: #5c5c5c;
+    transform: scale(1.03);
+}
+
+.delete:hover {
+    color: #ff3333;
+    transform: scale(1.1);
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffa07a;
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
+
