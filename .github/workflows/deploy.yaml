@@ -8,7 +8,7 @@ on:
       - 'LICENSE'
       - 'README.md'
       - 'example.json'
-      - '.github/*'
+      - '.github/**'
   workflow_dispatch:
 
 permissions:
