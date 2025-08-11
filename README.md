@@ -24,12 +24,12 @@ For more information, take a look at the [Example quiz](example.json), you can a
 ### Locally on your device
 
 - Clone this repository
-- Navigate to the repository root
+- Navigate to the repository `src/` directory
 - Open `index.html` in your browser
 
 **Alternative method:**
-- Install `http-server` using Python or Node.js.
-- Run the server and access YAQA in your browser.
+- Install `http-server` using Python or Node.js
+- Run the server inside `src/` directory and access YAQA in your browser
 
 ### Persistant Deploy
 
