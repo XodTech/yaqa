@@ -187,3 +187,8 @@ button[type="submit"] {
     transform: scale(1.03);
 }
 
+@media only screen and (orientation: portrait) {
+    .modal {
+        width: 85%;
+    }
+}
