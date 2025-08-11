@@ -8,6 +8,7 @@ on:
       - 'LICENSE'
       - 'README.md'
       - 'example.json'
+      - '.github/*'
   workflow_dispatch:
 
 permissions:
@@ -43,15 +44,3 @@ jobs:
       - name: Deploy to Github pages
         id: deployment
         uses: actions/deploy-pages@v4
-      
-      - name: Print success message and website adress
-        run: |
-          echo "Site deployed successfully!"
-          echo "Website URL: ${{ steps.deployment.outputs.page_url }}"
-
-
-
-
-
-  
-
