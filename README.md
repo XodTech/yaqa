@@ -3,9 +3,10 @@
 
 ## Introduction
 YAQA is a quiz generator written in pure HTML, CSS and jQuery.It's designed to be:
-    - **Easy to use**
-    - **Fully static** (no backend required)
-    - **Local** (all your quizzes are stored localy on your device)
+
+- **Easy to use**
+- **Fully static** (no backend required)
+- **Local** (all your quizzes are stored localy on your device)
 
 *Future development may include a backend version with cloud or P2P storage for syncing quizzes between devices*
 
@@ -49,7 +50,6 @@ Please:
 - Follow the existing coding style
 - Test new features
 - Use commit messages that are meaningful and consistent in style with existing ones
-- For new modules, utilize `template.py` and embed configuration instructions directly in the file
 
 ## License
 YAQA is a free and open-source software and it's released under the terms of the AGPL 3.0.
