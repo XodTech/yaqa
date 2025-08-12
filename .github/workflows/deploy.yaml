@@ -4,11 +4,8 @@ on:
   push:
     branches:
       - 'main'
-    paths-ignore:
-      - 'LICENSE'
-      - 'README.md'
-      - 'example.json'
-      - '.github/**'
+    paths:
+      - 'src/**'
   workflow_dispatch:
 
 permissions:
