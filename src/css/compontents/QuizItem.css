@@ -1,0 +1,32 @@
+.quiz-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #454545;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    max-width: 300px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.quiz-item .name {
+    margin-right: 10px;
+}
+
+.quiz-item .delete {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #ff0000;
+    transition: color 0.2s ease-in-out;
+}
+
+.quiz-item:hover {
+    background-color: #5c5c5c;
+    transform: scale(1.03);
+}

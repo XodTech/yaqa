@@ -3,11 +3,9 @@
 
 ## Introduction
 YAQA is a quiz generator written in pure HTML, CSS and jQuery.It's designed to be:
-
-- **Easy to use**
-- **Easy to use**
-- **Fully static** (no backend required)
-- **Local** (all your quizzes are stored localy on your device)
+    - **Easy to use**
+    - **Fully static** (no backend required)
+    - **Local** (all your quizzes are stored localy on your device)
 
 *Future development may include a backend version with cloud or P2P storage for syncing quizzes between devices*
 

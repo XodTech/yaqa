@@ -1,0 +1,13 @@
+#quiz-list {
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+    max-width: 300px;
+}
