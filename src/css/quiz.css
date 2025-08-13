@@ -1,3 +1,7 @@
+.quiz-window h2 {
+    padding: 15px 0px;
+}
+
 .next-btn {
     float:right;
     padding: 8px 16px;
@@ -80,6 +84,7 @@
 }
 
 .difficulty-indicator {
+    float: right;
     display: inline-block;
     padding: 5px 10px;
     border-radius: 5px;
@@ -89,6 +94,13 @@
     color: #333;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
+.question-counter {
+    float: left;
+    margin-top: 5px;
+}
+
+
 
 .difficulty-indicator.easy {
     background-color: #cff6cf;

@@ -138,11 +138,13 @@ function quizHandler(name) {
         let question = `${index+1}.${obj.question}`;
         let answer = obj.answer;
         let difficulty = obj.difficulty;
+        let length = quizJson.length;
 
         switch (obj.type) {
             case "flashcard":
                 $("#quiz-window").html(`
                     <b class="difficulty-indicator ${difficulty}">${difficulty}</b>
+                    <b class="question-counter">${index+1}/${length}</b>
                     <h2 id="content">${question}</h2>
                     <button class="btn" id="reveal-btn">Reveal</button>
                     <button id="next-btn" class="next-btn">Skip</button>
@@ -169,6 +171,7 @@ function quizHandler(name) {
             case "one-line":
                 $("#quiz-window").html(`
                     <b class="difficulty-indicator ${difficulty}">${difficulty}</b>
+                    <b class="question-counter">${index+1}/${length}</b>
                     <h2>${question}</h2>
                     <input type = "text" id = "quiz-input" placeholder = "Provide answer here...">
                     <button class="btn" id="reveal-btn">Reveal</button>
@@ -202,6 +205,7 @@ function quizHandler(name) {
             case "true/false":
                 $("#quiz-window").html(`
                     <b class="difficulty-indicator ${difficulty}">${difficulty}</b>
+                    <b class="question-counter">${index+1}/${length}</b>
                     <h2>${question}</h2>
                     <div class="tf-container">
                     <button class="tf-btn true-btn" id="true-btn">True</button>
@@ -233,6 +237,7 @@ function quizHandler(name) {
             case "multiple-choice":
                 $("#quiz-window").html(`
                     <b class="difficulty-indicator ${difficulty}">${difficulty}</b>
+                    <b class="question-counter">${index+1}/${length}</b>
                     <h2>${question}</h2>
                     <div id="mch-container" class="mch-container">
                     </div>
