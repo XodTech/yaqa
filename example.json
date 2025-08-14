@@ -21,7 +21,7 @@
         "type": "multiple-choice",
         "difficulty": "expert",
         "question": "The answer is A",
-        "choices": ["Answer A","Answer B","Answer C","Answer C"],
-        "answer": "A"
+        "choices": ["Answer A","Answer B","Answer C","Answer D"],
+        "answer": "Answer A"
     }
 ]
