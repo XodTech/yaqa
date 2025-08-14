@@ -1,5 +1,7 @@
 .quiz-window h2 {
     padding: 15px 0px;
+    max-width: 350px;
+    word-wrap: break-word;
 }
 
 .next-btn {
