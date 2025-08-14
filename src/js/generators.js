@@ -1,4 +1,16 @@
-function genFlashcard(question, answer,index, length, difficulty) {
+function parseQuizJson(quizJson, index) {
+    let obj = quizJson[index];
+    return {
+        obj: obj,
+        question: `${index+1}.${obj.question}`,
+        answer: obj.answer,
+        difficulty: obj.difficulty,
+        length: quizJson.length,
+    }
+}
+
+function genFlashcard(quizJson, index) {
+    let { obj, question, answer, difficulty, length } = parseQuizJson(quizJson, index);
     $("#quiz-window").html(`
         <b class="difficulty-indicator ${difficulty}">${difficulty}</b>
         <b class="question-counter">${index+1}/${length}</b>
@@ -19,7 +31,8 @@ function genFlashcard(question, answer,index, length, difficulty) {
     });
 }
 
-function genOneLine(question, answer,index, length, difficulty) {
+function genOneLine(quizJson, index) {
+    let { obj, question, answer, difficulty, length } = parseQuizJson(quizJson, index);
     $("#quiz-window").html(`
         <b class="difficulty-indicator ${difficulty}">${difficulty}</b>
         <b class="question-counter">${index+1}/${length}</b>
@@ -48,8 +61,8 @@ function genOneLine(question, answer,index, length, difficulty) {
     });
 }
 
-
-function genTrueFalse(question, answer,index, length, difficulty) {
+function genTrueFalse(quizJson, index) {
+    let { obj, question, answer, difficulty, length } = parseQuizJson(quizJson, index);
     $("#quiz-window").html(`
         <b class="difficulty-indicator ${difficulty}">${difficulty}</b>
         <b class="question-counter">${index+1}/${length}</b>
@@ -75,7 +88,8 @@ function genTrueFalse(question, answer,index, length, difficulty) {
     };
 }
 
-function genMultipleChoice(obj, question, answer,index, length, difficulty) {
+function genMultipleChoice(quizJson, index) {
+    let { obj, question, answer, difficulty, length } = parseQuizJson(quizJson, index);
     $("#quiz-window").html(`
         <b class="difficulty-indicator ${difficulty}">${difficulty}</b>
         <b class="question-counter">${index+1}/${length}</b>

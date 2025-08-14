@@ -1,7 +1,6 @@
 function toggleModal() {
     event.stopPropagation();
-    let modal_container = $("#add-modal");
-    modal_container.toggle();
+    let modal_container = $("#add-modal"); modal_container.toggle();
 }
 
 function closeModal() {
@@ -135,11 +134,6 @@ function quizHandler(name) {
 
         let obj = quizJson[index];
 
-        let question = `${index+1}.${obj.question}`;
-        let answer = obj.answer;
-        let difficulty = obj.difficulty;
-        let length = quizJson.length;
-
         function spawnNextBtn() {
             $("#quiz-window").append(`
                 <button id="next-btn" class="next-btn">Skip</button>
@@ -152,20 +146,20 @@ function quizHandler(name) {
 
         switch (obj.type) {
             case "flashcard":
-                genFlashcard(question, answer, index, length, difficulty);
+                genFlashcard(quizJson, index);
                 spawnNextBtn();
                 break;
 
             case "one-line":
-                genOneLine(question, answer, index, length, difficulty);
+                genOneLine(quizJson, index);
                 spawnNextBtn();
                 break;
             case "true/false":
-                genTrueFalse(question, answer, index, length, difficulty);
+                genTrueFalse(quizJson, index);
                 spawnNextBtn();
                 break;
             case "multiple-choice":
-                genMultipleChoice(obj, question, answer, index, length, difficulty);
+                genMultipleChoice(quizJson, index);
                 spawnNextBtn();
                 break;
             default:
