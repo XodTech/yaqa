@@ -106,11 +106,14 @@ function deleteQuiz(name) {
         localStorage.removeItem(name);
         fetchQuizList();
     }
+    if ( name == $("#quiz-name").text() ) {
+        $("#quiz-window").empty();
+    }
 }
 
 function startQuiz(name) {
     let startScreen = `
-        <h2>${name}</h2>
+        <h2 id="quiz-name">${name}</h2>
         <button class = "btn" id = "begin-btn">Begin</button>
     `;
     $("#quiz-window").html(startScreen);
