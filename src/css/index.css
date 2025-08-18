@@ -9,7 +9,41 @@ body {
     margin: 0;
 }
 
-#quiz-list {
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffa07a;
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
+
+.title {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+
+}
+
+.add-btn {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+.add-btn:hover {
+    background-color: #ff9900;
+    transform: scale(1.03);
+}
+
+.quiz-list {
     position: absolute;
     top: 120px;
     left: 10px;
@@ -39,6 +73,11 @@ body {
     transition: background-color 0.2s ease-in-out;
 }
 
+.quiz-item:hover {
+    background-color: #5c5c5c;
+    transform: scale(1.03);
+}
+
 .quiz-item .name {
     margin-right: 10px;
 }
@@ -51,9 +90,9 @@ body {
     transition: color 0.2s ease-in-out;
 }
 
-.quiz-item:hover {
-    background-color: #5c5c5c;
-    transform: scale(1.03);
+.quiz-item .delete:hover {
+    color: #ff3333;
+    transform: scale(1.1);
 }
 
 .modal {
@@ -74,20 +113,6 @@ body {
     animation: pop-up 0.1s ease-in-out forwards;
 }
 
-footer {
-    color: #c9c5c5;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    bottom: 10px;
-    margin: 5px;
-    text-align: center;
-}
-
-footer a {
-    color: #e39471;
-}
-
 @keyframes pop-up {
     0% {
         opacity: 0;
@@ -100,22 +125,21 @@ footer a {
     }
 }
 
-.title {
-    position: absolute;
-    top: 0px;
-    left: 10px;
-
+.file-label {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
 }
 
-.add-btn {
-    position: absolute;
-    top: 60px;
-    left: 10px;
-}
-
-.add-btn:hover {
-    background-color: #ff9900;
-    transform: scale(1.03);
+.file-label:hover {
+    background-color: #4b4b4b;
+    transform: scale(1.02);
 }
 
 label {
@@ -145,23 +169,6 @@ input[type="file"] {
     display: none;
 }
 
-.file-label {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #3b3b3b;
-    color: #ffffff;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.file-label:hover {
-    background-color: #4b4b4b;
-    transform: scale(1.02);
-}
-
 textarea {
     width: 100%;
     height: 100px;
@@ -185,26 +192,18 @@ button[type="submit"] {
     margin-top: 10px;
 }
 
-.delete:hover {
-    color: #ff3333;
-    transform: scale(1.1);
+footer {
+    color: #c9c5c5;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    margin: 5px;
+    text-align: center;
 }
 
-.btn {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ffa07a;
-    color: #000000;
-    cursor: pointer;
-    font-size: 18px;
-    display: block;
-    margin: 0 auto;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.btn:hover {
-    transform: scale(1.03);
+footer a {
+    color: #e39471;
 }
 
 @media only screen and (orientation: portrait) {
